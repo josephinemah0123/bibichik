@@ -1,0 +1,1 @@
+import {Button} from '@/components/site';export default function NotFound(){return <main id="main" className="container section legal"><p className="eyebrow">Page not found</p><h1>Let’s get you<br/>back to the table.</h1><Button href="/">Back to home</Button></main>}

@@ -1,0 +1,2 @@
+import type {ReactNode} from 'react';
+export function Editorial({label,title,image,alt,children,reverse=false}:{label:string,title:ReactNode,image:string,alt:string,children:ReactNode,reverse?:boolean}){return <section className={`editorial container section ${reverse?'reverse':''}`}><div className="editorial-photo"><img src={`/assets/${image}.webp`} alt={alt} loading="lazy"/></div><div className="editorial-copy"><p className="eyebrow">{label}</p><h2>{title}</h2>{children}</div></section>}

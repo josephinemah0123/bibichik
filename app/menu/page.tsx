@@ -1,0 +1,3 @@
+import Link from 'next/link';
+export const metadata={title:'Our Menu'};
+export default function Menu(){return <main id="main" className="menu-table"><div className="container"><div className="menu-title"><p className="eyebrow">The Bibichik table</p><h1>Our Menu</h1><p>Choose a menu to explore.</p></div><div className="books">{['lunch','dinner'].map(m=><Link className="menu-book-card" href={`/menu/${m}`} key={m} aria-label={`Open ${m} menu`}><img className="book-image" src={`/assets/${m}-book.webp`} alt={`BiBiChik ${m} menu hardcover book — A Taste of Nyonya Heritage`} fetchPriority="high"/><span>Browse {m} menu <b aria-hidden="true">→</b></span></Link>)}</div></div></main>}
