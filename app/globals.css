@@ -49,7 +49,14 @@
 .hero-home-hero .hero-photo img,.hero-flavour-hero .hero-photo img{object-position:60% center}
 .hero-story-hero .hero-photo img{object-position:62% center}
 .hero-visit-hero .hero-photo img{object-position:center center}
-.menu-title{position:relative;left:50%;transform:translateX(-50%);width:100vw;min-height:78svh;margin-top:-50px;padding:60px max(56px,calc((100vw - 1320px)/2));display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left;background-image:linear-gradient(90deg,rgba(247,244,242,.94) 0%,rgba(247,244,242,.77) 31%,rgba(247,244,242,.12) 70%,transparent 100%),url('/assets/menu-hero.webp');background-position:center;background-size:cover;background-repeat:no-repeat}
-.menu-title h1,.menu-title p{max-width:490px}
-@media(max-width:800px){.hero{min-height:74svh;padding:54px 0}.hero-copy{width:calc(100% - 64px)}.menu-title{min-height:74svh;margin-top:-35px;padding:54px 32px}.hero::before{background:linear-gradient(90deg,rgba(247,244,242,.9),rgba(247,244,242,.55))}}
-@media(max-width:540px){.hero{min-height:76svh;padding:50px 0}.hero-copy{width:calc(100% - 40px)}.hero-home-hero .hero-photo img,.hero-flavour-hero .hero-photo img{object-position:66% center}.hero-story-hero .hero-photo img{object-position:62% center}.hero-visit-hero .hero-photo img{object-position:59% center}.menu-title{min-height:76svh;padding:50px 20px;background-position:60% center;background-image:linear-gradient(90deg,rgba(247,244,242,.92),rgba(247,244,242,.62)),url('/assets/menu-hero.webp')}}
+@media(max-width:800px){.hero{min-height:74svh;padding:54px 0}.hero-copy{width:calc(100% - 64px)}.hero::before{background:linear-gradient(90deg,rgba(247,244,242,.9),rgba(247,244,242,.55))}}
+@media(max-width:540px){.hero{min-height:76svh;padding:50px 0}.hero-copy{width:calc(100% - 40px)}.hero-home-hero .hero-photo img,.hero-flavour-hero .hero-photo img{object-position:66% center}.hero-story-hero .hero-photo img{object-position:62% center}.hero-visit-hero .hero-photo img{object-position:59% center}}
+.language-switch{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;font-size:12px;letter-spacing:.03em}
+.language-switch a{padding:6px 2px}
+.language-switch a[aria-current=page]{font-weight:700;color:var(--sage)}
+.mobile-language{margin-top:4px}
+.mobile-language .language-switch{font-size:16px}
+@media(min-width:801px){.mobile-language{display:none}}
+@media(max-width:800px){.desktop-language{display:none}}
+html[lang="zh-CN"] body{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",Arial,sans-serif}
+html[lang="zh-CN"] h1,html[lang="zh-CN"] h2,html[lang="zh-CN"] h3{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",serif;letter-spacing:0;line-height:1.2}
