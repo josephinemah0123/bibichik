@@ -14,7 +14,15 @@ const categories=[['Nyonya Classics','Rich, aromatic and full of character.','cl
 export function MenuPreview(){return <section className="mint section"><div className="container"><div className="section-heading"><div><p className="eyebrow">A table full of favourites</p><h2>Our Menu</h2></div><Link className="text-link" href="/menu">View full menu <span>→</span></Link></div><div className="category-grid">{categories.map(([n,d,i])=><Link href="/menu" key={n} className="category"><Image src={`/assets/${i}.webp`} alt={n} width={1254} height={1254} sizes="(max-width: 800px) 50vw, 25vw"/><h3>{n}</h3><p>{d}</p></Link>)}</div></div></section>}
 export type Location={name:string,address:string,phone:string,mapUrl:string,image:string,openingHours?:{day:string,sessions:string[]}[]};
 export const locations:Location[]=[
-  {name:'BiBiChik Sunway 163 Mall',address:'LG1-11 & 12, Sunway 163 Mall, 8, Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur',phone:'011-6214 7497',mapUrl:'https://www.google.com/maps/search/?api=1&query=BiBiChik%20Sunway%20163%20Mall',image:'/assets/location-one.webp'},
+  {name:'BiBiChik Sunway 163 Mall',address:'LG1-11 & 12, Sunway 163 Mall, 8, Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur',phone:'011-6214 7497',mapUrl:'https://www.google.com/maps/search/?api=1&query=BiBiChik%20Sunway%20163%20Mall',image:'/assets/location-one.webp',openingHours:[
+    {day:'Monday',sessions:['10 am–10:30 pm']},
+    {day:'Tuesday',sessions:['10 am–10:30 pm']},
+    {day:'Wednesday',sessions:['10 am–10:30 pm']},
+    {day:'Thursday',sessions:['10 am–10:30 pm']},
+    {day:'Friday',sessions:['10 am–10:30 pm']},
+    {day:'Saturday',sessions:['10 am–10:30 pm']},
+    {day:'Sunday',sessions:['10 am–10:30 pm']}
+  ]},
   {name:'BiBiChik SS2',address:'No. 17, Jalan SS 2/30, SS 2, 47300 Petaling Jaya, Selangor',phone:'011-7023 3354',mapUrl:'https://www.google.com/maps/search/?api=1&query=BiBiChik%20SS2%20Petaling%20Jaya',image:'/assets/location-two.webp',openingHours:[
     {day:'Monday',sessions:['11 am–3 pm','5:30–10:30 pm']},
     {day:'Tuesday',sessions:[]},
