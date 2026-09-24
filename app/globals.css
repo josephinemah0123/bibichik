@@ -10,6 +10,7 @@
 .location-card>img{width:100%;height:260px;object-fit:cover}
 .location-card>div{display:flex;flex-direction:column;align-items:flex-start;min-height:275px}
 .location-card>div .button{margin-top:auto}
+.location-card>div .reservation-button{margin-top:12px}
 .location-card p a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:800px){.location-grid{grid-template-columns:1fr}.location-card>div{min-height:0}.location-card>div .button{margin-top:12px}}
 .location-hours{width:100%;margin:8px 0 24px}
@@ -51,11 +52,15 @@
 .hero-visit-hero .hero-photo img{object-position:center center}
 @media(max-width:800px){.hero{min-height:74svh;padding:54px 0}.hero-copy{width:calc(100% - 64px)}.hero::before{background:linear-gradient(90deg,rgba(247,244,242,.9),rgba(247,244,242,.55))}}
 @media(max-width:540px){.hero{min-height:76svh;padding:50px 0}.hero-copy{width:calc(100% - 40px)}.hero-home-hero .hero-photo img,.hero-flavour-hero .hero-photo img{object-position:66% center}.hero-story-hero .hero-photo img{object-position:62% center}.hero-visit-hero .hero-photo img{object-position:59% center}}
-.language-switch{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;font-size:12px;letter-spacing:.03em}
-.language-switch a{padding:6px 2px}
-.language-switch a[aria-current=page]{font-weight:700;color:var(--sage)}
+.language-switch{display:inline-flex;align-items:center;gap:2px;padding:3px;border:1px solid #a9c8bf;border-radius:999px;background:#edf5f1;white-space:nowrap;font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:500;letter-spacing:.04em;line-height:1}
+.language-switch>span[aria-hidden]{display:none}
+.language-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:46px;min-height:34px;padding:8px 11px;border-radius:999px;color:var(--ink);transition:background-color .2s ease,color .2s ease,box-shadow .2s ease}
+.language-switch a:hover:not([aria-current=page]){background:#d6eae3}
+.language-switch a[aria-current=page]{background:var(--ink);color:#fff;font-weight:600}
+.language-switch a:focus-visible{outline:none;box-shadow:0 0 0 2px var(--cream),0 0 0 4px var(--ink)}
 .mobile-language{margin-top:4px}
-.mobile-language .language-switch{font-size:16px}
+.mobile-language .language-switch{font-size:14px}
+.mobile-language .language-switch a{min-width:58px;min-height:44px;padding:11px 14px}
 @media(min-width:801px){.mobile-language{display:none}}
 @media(max-width:800px){.desktop-language{display:none}}
 html[lang="zh-CN"] body{font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC",Arial,sans-serif}
