@@ -4,7 +4,7 @@ BiBiChik is a Next.js 16, React 19, and TypeScript website. English pages are at
 
 ## Run locally
 
-Use Node.js 24.x and npm.
+Use Node.js 22.x and npm.
 
 ```sh
 npm install
@@ -15,9 +15,9 @@ npm run start
 
 `npm run dev` uses the Next.js development server (port 3000 by default). `npm run start` serves the production build.
 
-## Deploy to Vercel
+## Deploy to GoDaddy Node.js Hosting
 
-Push this directory to a Git repository and import it into Vercel. Select the Next.js framework preset and leave the install command, build command, and output directory at their detected defaults. The project uses `npm install` and `npm run build`; no Wrangler, Vinext, custom server, environment variable, or `vercel.json` is required. Vercel serves the Next.js build output automatically.
+Upload the contents of this directory as a ZIP with `package.json` at the ZIP root. Select Node.js 22. The install command is `npm install`, the build command is `npm run build`, and the start command is `npm start`. GoDaddy supplies `PORT`; Next.js `next start` reads it automatically. Keep this as a Node.js application rather than a static export. Do not upload `node_modules`, `.next`, `.git`, or local `.env` files. No application secrets or extra environment variables are currently required.
 
 ## Pages
 
